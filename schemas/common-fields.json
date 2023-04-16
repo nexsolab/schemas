@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.nexso.dev/common-fields",
+  "type": "object",
+  "properties": {
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "title": "When this record was created",
+      "description": "A time-stamp field that indicates when a record was created.",
+      "example": "2016-08-22T02:35:42.799Z"
+    },
+    "modifiedAt": {
+      "type": "string",
+      "format": "date-time",
+      "title": "When this record was modified",
+      "description": "A time-stamp field that indicates the date and time of the most recent update.",
+      "example": "2016-08-22T02:35:42.799Z"
+    }
+  }
+}
