@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.nexso.dev/nexso-tenantid",
+  "type": "string",
+  "format": "tenantId",
+  "pattern": "^nxt:[\\w-]{1,36}$",
+  "title": "nexso Tenant ID standard",
+  "description": "nexso Tenant ID field that indicates the tenant that owns the resource",
+  "example": "nxt:b39bed8b-826f-44fc-b5bd-4eb09b80e0cc"
+}

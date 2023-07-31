@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.nexso.dev/mongodb-objectid",
+  "type": "string",
+  "format": "objectid",
+  "pattern": "^[0-9a-fA-F]{24}$",
+  "title": "MongoDB Object ID",
+  "description": "MongoDB old Object ID",
+  "example": "5f8a1d5b9f9e4a0001c3e4a0"
+}
