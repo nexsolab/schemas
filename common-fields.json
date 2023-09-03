@@ -11,7 +11,7 @@
       "example": "2016-08-22T02:35:42.799Z"
     },
     "modifiedAt": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time",
       "title": "When this record was modified",
       "description": "A time-stamp field that indicates the date and time of the most recent update.",
