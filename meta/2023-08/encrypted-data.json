@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.nexso.dev/meta/2023-08/encrypted-data.json",
+  "$vocabulary": {
+    "https://schemas.nexso.dev/vocab/encrypted-data": true
+  },
+  "$dynamicAnchor": "meta",
+  "title": "meta-schema for encrypted data in nexso",
+  "type": [
+    "object",
+    "boolean"
+  ],
+  "properties": {
+    "encrypted": {
+      "type": "boolean"
+    },
+    "encType": {
+      "type": "string",
+      "enum": [
+        "random",
+        "deterministic"
+      ]
+    },
+    "publicInformation": {
+      "type": "boolean"
+    },
+    "requiredReadPerms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requiredRestrictPerms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "disposal": {
+      "type": "string"
+    }
+  }
+}

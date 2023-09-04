@@ -1,46 +1,25 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://schemas.nexso.dev/meta/2023-08/data.json",
+  "$dynamicAnchor": "meta",
   "$vocabulary": {
     "https://json-schema.org/draft/2020-12/vocab/core": true,
     "https://json-schema.org/draft/2020-12/vocab/applicator": true,
+    "https://json-schema.org/draft/2020-12/vocab/unevaluated": true,
     "https://json-schema.org/draft/2020-12/vocab/validation": true,
     "https://json-schema.org/draft/2020-12/vocab/meta-data": true,
     "https://json-schema.org/draft/2020-12/vocab/format-annotation": true,
     "https://json-schema.org/draft/2020-12/vocab/content": true,
-    "https://json-schema.org/draft/2020-12/vocab/unevaluated": true
+    "https://schemas.nexso.dev/vocab/encrypted-data": true
   },
-  "$dynamicAnchor": "meta",
   "title": "nexso data definition",
   "description": "Define a meta-schema to work with data in nexso",
   "allOf": [
-    {
-      "$ref": "https://json-schema.org/draft/2020-12/schema"
-    }
+    { "$ref": "https://json-schema.org/draft/2020-12/meta/core" },
+    { "$ref": "https://json-schema.org/draft/2020-12/meta/applicator" },
+    { "$ref": "https://json-schema.org/draft/2020-12/meta/validation" },
+    { "$ref": "https://schemas.nexso.dev/meta/2023-08/encrypted-data.json "}
   ],
   "unevaluatedProperties": false,
-  "properties": {
-    "encrypted": "boolean",
-    "encType": {
-      "type": "string",
-      "enum": [
-        "random",
-        "deterministic"
-      ]
-    },
-    "publicInformation": {
-      "type": "boolean"
-    },
-    "requiredReadPerms": {
-      "type": "array",
-      "items": "string"
-    },
-    "requiredRestrictPerms": {
-      "type": "array",
-      "items": "string"
-    },
-    "disposal": {
-      "type": "string"
-    }
-  }
+  "properties": {}
 }
