@@ -17,9 +17,11 @@
   "allOf": [
     { "$ref": "https://json-schema.org/draft/2020-12/meta/core" },
     { "$ref": "https://json-schema.org/draft/2020-12/meta/applicator" },
+    { "$ref": "https://json-schema.org/draft/2020-12/meta/unevaluated" },
     { "$ref": "https://json-schema.org/draft/2020-12/meta/validation" },
-    { "$ref": "https://schemas.nexso.dev/meta/2023-08/encrypted-data.json "}
-  ],
-  "unevaluatedProperties": false,
-  "properties": {}
+    { "$ref": "https://json-schema.org/draft/2020-12/meta/meta-data" },
+    { "$ref": "https://json-schema.org/draft/2020-12/meta/format-annotation" },
+    { "$ref": "https://json-schema.org/draft/2020-12/meta/content" },
+    { "$ref": "https://schemas.nexso.dev/meta/2023-08/encrypted-data.json"}
+  ]
 }
